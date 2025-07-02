@@ -1,0 +1,79 @@
+<div class="popup" data-popup="popup-form" data-close-overlay>
+    <div class="popup__wrapper" data-close-overlay>
+        <form action="#" class="popup__content">
+            <div class="popup__head">
+                <h2>Обсудить проект</h2>
+                <button class="popup__close button-close" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5855 10.0008L0.664062 17.9222L2.07827 19.3365L9.99971 11.415L17.9211 19.3365L19.3354 17.9222L11.4139 10.0008L19.3353 2.07933L17.9211 0.665115L9.99971 8.58656L2.0783 0.665115L0.664087 2.07933L8.5855 10.0008Z" fill="#595F6B" />
+                    </svg>
+                </button>
+            </div>
+            <div class="popup__row">
+                <div class="popup__item-input">
+                    <label class="popup__item-input-label">Ваш email</label>
+                    <input type="text" name="email" class="popup__input input-text _req _email">
+                </div>
+                <div class="popup__item-row">
+                    <div class="popup__item-input">
+                        <label class="popup__item-input-label">Телефон</label>
+                        <input type="text" name="tel"  class="popup__input input-text _req tel">
+                    </div>
+                    <div class="popup__item-input">
+                        <label class="popup__item-input-label">Телеграм</label>
+                        <input type="text" name="telegram" class="popup__input input-text _req">
+                    </div>
+                </div>
+                <div class="popup__box-radio">
+                    <div class="popup__title-radio">
+                        Выберите услугу
+                    </div>
+                    <div class="popup__row-checked">
+                        <label class="popup__item-checked">
+                            <input type="checkbox" name="servis" class="popup__checked-input">
+                            <span>Дизайн</span>
+                        </label>
+                        <label class="popup__item-checked">
+                            <input type="checkbox" name="servis" class="popup__checked-input">
+                            <span>Мобильное приложение</span>
+                        </label>
+                        <label class="popup__item-checked">
+                            <input type="checkbox" name="servis" class="popup__checked-input">
+                            <span>UI/UX-дизайн</span>
+                        </label>
+                        <label class="popup__item-checked">
+                            <input type="checkbox" name="servis" class="popup__checked-input">
+                            <span>Веб-разработка</span>
+                        </label>
+                    </div>
+                </div>
+
+                <textarea class="popup__textarea input-text" placeholder="Расскажите о своем проекте" name="details"></textarea>
+                <div class="popup__file file">
+                    <input type="file" multiple name="file" class="file__input">
+                    <div class="file__button">
+                        <span>Прикрепить файл</span>
+                        <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0003 2.49239C13.8027 2.61753 14.547 3.00017 15.1175 3.58805C16.5475 5.06147 16.53 7.40995 15.0781 8.86181L14.781 9.15889L11.344 12.5959L7.50334 16.4365C6.12548 17.8143 3.88933 17.8071 2.52044 16.4203C1.1603 15.0425 1.1718 12.8237 2.54615 11.46L8.17784 5.87188C8.71554 5.33834 9.58343 5.34001 10.1191 5.87562C10.6562 6.41273 10.6562 7.28359 10.1191 7.82071L4.21204 13.7278L5.2727 14.7884L11.1798 8.88137C12.3027 7.75845 12.3027 5.93782 11.1797 4.81493C10.0599 3.69517 8.24544 3.69168 7.12131 4.80711L1.48961 10.3952C-0.47171 12.3414 -0.488122 15.5077 1.45292 17.4741C3.40646 19.4531 6.59767 19.4635 8.56399 17.4972L12.4047 13.6565L15.8417 10.2196L16.1387 9.92248C18.1702 7.89101 18.1948 4.60499 16.1939 2.54337C15.3411 1.66461 14.2108 1.1136 13.0003 0.979492V2.49239Z" fill="#F3F3F3" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__bot">
+                <button type="submit" class="popup__button button violet">
+                    Получить консультацию
+                </button>
+                <label class="popup__pol-check pol-check">
+                    <input type="checkbox" checked name="politic" class="pol-check__input _req">
+                    <div class="pol-check__icon">
+                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M13.0294 2.03033L6.02941 9.03033C5.73652 9.32322 5.26164 9.32322 4.96875 9.03033L0.96875 5.03033L2.02941 3.96967L5.49908 7.43934L11.9688 0.969666L13.0294 2.03033Z" fill="white" />
+                          </svg>
+                    </div>
+                    <span>Я ознакомлен (-на) и согласен (-на) с <a href="#">Политикой конфиденциальности </a></span>
+                </label>  
+            </div>
+ 
+        </form>
+    </div>
+</div>

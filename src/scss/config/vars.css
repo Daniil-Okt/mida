@@ -1,0 +1,37 @@
+:root {
+  --bs-font-family: "InterTight", sans-serif;
+  --bs-font-size: 16px;
+  --bs-font-weight: 400;
+  --bs-line-height: 1.2;
+  --bs-font-color: #101010;
+  --bs-transition: .3s ease-in-out;
+  --bs-radius: 10px;
+  --primary-color: #131313;
+  --primary-hover-color: #2d2d2d;
+  --secondary-color: #ff4040;
+  --white: #fff;
+  --black-0: #000;
+  --black-1: #101010;
+  --black-2: #121315;
+  --violet: #6952f5;
+  --violet-2: #806cfa;
+  --violet-3: #c7beff;
+  --gray: #787982;
+  --light: #f3f5f8;
+  --gray-card: #7e7e7e;
+  --light-gray-card: #f3f5f8;
+  --black-white: #000;
+  --white-black: #fff;
+  --body-color: #fff;
+  --bs-shadow: 0px 2px 3px rgba(#000, 10%), 0px 8px 3px rgba(#000, 10%);
+  --hover-shadow: 0 0 5px 0 rgba(#000, 10%),
+                  0 0 10px 0 rgba(#000, 10%),
+                  0 0 15px 0 rgba(#000, 10%);
+}
+
+.black-theme {
+  --black-white: #fff;
+  --white-black: #000;
+  --body-color: #272727;
+  --light-gray-card: #7e7e7e;
+}/*# sourceMappingURL=vars.css.map */
