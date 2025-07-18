@@ -277,3 +277,30 @@ document.querySelectorAll('.article__switch').forEach(button => {
 	// Для множественного выбора добавьте атрибут multiple:
 	// <input type="file" class="file__input" multiple>
   });
+
+
+  // Функция для установки высоты
+function setArticleBodyHeight() {
+	document.querySelectorAll('.article__body').forEach(body => {
+	  // Получаем оба блока внутри
+	  const noOpenActive = body.querySelector('.no-open-active');
+	  const openActive = body.querySelector('.open-active');
+	  
+	  // Вычисляем их высоты
+	  const heightNoOpen = noOpenActive ? noOpenActive.offsetHeight : 0;
+	  const heightOpen = openActive ? openActive.offsetHeight : 0;
+	  
+	  // Устанавливаем максимальную высоту
+	  body.style.height = `${Math.max(heightNoOpen, heightOpen)}px`;
+	});
+  }
+  
+  // Вызываем при загрузке
+  document.addEventListener('DOMContentLoaded', setArticleBodyHeight);
+  
+  // И при ресайзе (с debounce для оптимизации)
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+	clearTimeout(resizeTimer);
+	resizeTimer = setTimeout(setArticleBodyHeight, 20);
+  });

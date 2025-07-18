@@ -1,29 +1,100 @@
 .about {
     position: relative;
     overflow: hidden;
+    @include adaptiveClamp(padding-top, 146, 116);
+
+
     &__fon {
+        position: absolute;
+        top: 0;
+        right: 0;
+        pointer-events: none;
         margin-left: auto;
         margin-right: auto;
         max-width: rem(2780);
-        height: rem(1005);
+        height: rem(1113);
         img {
-            width: 100%;
+            width: auto;
             height: 100%;
-            object-fit: cover;
+            // object-fit: cover;
         }
 
-        @media(max-width:1400px){
-            @include adaptiveClamp(height, 1005, 594);
+        @media(max-width:1920px){
+            @include adaptiveClamp(height, 1113, 517);
+        }
+
+        @media(max-width:768px){
+            right: -21%;
         }
     }
 
+
+    &__container {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__body {
+
+
+        width: auto;
+    
+        background: #f3f5f8;
+        @include adaptiveClamp(border-radius, 64, 34);
+        @include adaptiveClamp(padding-top, 164, 80);
+        @include adaptiveClamp(padding-bottom, 177, 87);
+        @include adaptiveClamp(padding-right, 280, 25);
+        @include adaptiveClamp(padding-left, 280, 25);
+        display: flex;
+        justify-content: center;
+        @include adaptiveClamp(margin-bottom, 74, 29);
+
+        @media(min-width:386px){
+            @include adaptiveClamp(max-width, 1566, 381);
+            margin-left: -10%;
+            margin-right: -10%;
+        }
+
+        @media(max-width:385px){
+            @include adaptiveClamp(padding-right, 280, 10);
+            @include adaptiveClamp(padding-left, 280, 10);
+        }
+    }
+
+    &__title {
+        position: relative;
+        h1 {
+            font-weight: 500;
+            font-size: 32px;
+            @include adaptiveClamp(font-size, 98, 32);
+            letter-spacing: -0.02em;
+            text-align: center;
+
+
+            b,strong {
+                font-weight: 500;
+                color: #787982;
+            }
+        }
+    }
+
+    &__bot-text {
+        @include adaptiveClamp(font-size, 24, 10);
+        text-align: center;
+        @include adaptiveClamp(margin-bottom, 40, 18);
+        color: #787982;
+    }
+
+
     &__running {
-        position: absolute;
+        // position: absolute;
         width: 100%;
-        bottom: rem(76);
+        // bottom: rem(76);
 
         @media(max-width:1400px){
-            bottom: rem(31);
+            // bottom: rem(31);
         }
     }
 
@@ -45,6 +116,74 @@
         }
         @media(max-width:720px){
             height: rem(28);
+        }
+
+
+        .black-theme & {
+            img {
+                // filter: invert(0) grayscale(1);
+                filter: brightness(2) grayscale(1) contrast(100);
+            }
+        }
+    }
+
+    &__title-icon {
+        pointer-events: none;
+        position: absolute;
+        @include adaptiveClamp(width, 96, 25);
+        img {
+            width: 100%;
+        }
+
+
+        &.left {
+            top: 65.5%;
+            right: 96%;
+
+            @media(max-width:450px){
+                top: 67%;
+            }
+
+            @media(max-width:385px){
+                display: none;
+            }
+        }
+        &.right {
+            bottom: 62%;
+            left: 88.5%;
+            
+            @media(max-width:450px){
+                bottom: 63.5%;
+            }
+            @media(max-width:385px){
+                display: none;
+            }
+        }
+    }
+
+    &__title-str {
+        pointer-events: none;
+        position: absolute;
+        bottom: 37%;
+        left: 92.7%;
+        @include adaptiveClamp(width, 172.36, 41.45);
+        img {
+            @include adaptiveClamp(width, 172.36, 41.45);
+        }
+
+        @media(max-width:768px){
+            bottom: 43%;
+            left: 92%;
+        }
+        @media(max-width:590px){
+            left: 93%;
+        }
+        @media(max-width:550px){
+            bottom: 47%;
+            left: 91.5%;
+        }
+        @media(max-width:385px){
+            display: none;
         }
     }
 }

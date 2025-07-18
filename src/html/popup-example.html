@@ -11,17 +11,19 @@
             </div>
             <div class="popup__row">
                 <div class="popup__item-input">
-                    <label class="popup__item-input-label">Ваш email</label>
-                    <input type="text" name="email" class="popup__input input-text _req _email">
+                    <label class="popup__item-input-label">Имя</label>
+                    <input type="text" name="email" class="popup__input input-text">
                 </div>
                 <div class="popup__item-row">
                     <div class="popup__item-input">
                         <label class="popup__item-input-label">Телефон</label>
                         <input type="text" name="tel"  class="popup__input input-text _req tel">
+                        <div class="popup__item-input-req">Поле обязательно для заполнения</div>
                     </div>
                     <div class="popup__item-input">
                         <label class="popup__item-input-label">Телеграм</label>
                         <input type="text" name="telegram" class="popup__input input-text _req">
+                        <div class="popup__item-input-req">Поле обязательно для заполнения</div>
                     </div>
                 </div>
                 <div class="popup__box-radio">
@@ -75,5 +77,26 @@
             </div>
  
         </form>
+    </div>
+</div>
+
+
+<div class="popup popup-thanks" data-popup="popup-thanks" data-close-overlay>
+    <div class="popup__wrapper" data-close-overlay>
+        <div class="popup__content">
+            <div class="popup__head">
+                
+                <button class="popup__close button-close" type="button">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.5855 10.0008L0.664062 17.9222L2.07827 19.3365L9.99971 11.415L17.9211 19.3365L19.3354 17.9222L11.4139 10.0008L19.3353 2.07933L17.9211 0.665115L9.99971 8.58656L2.0783 0.665115L0.664087 2.07933L8.5855 10.0008Z" fill="#595F6B" />
+                    </svg>
+                </button>
+            </div>
+            <div class="popup-thanks__row">
+                <img src="@img/rocket.png" alt="">
+                <h2>Спасибо за заявку!</h2>
+                <p>В ближайшее время наш менеджер свяжется с вами.</p>
+            </div>
+        </div>
     </div>
 </div>

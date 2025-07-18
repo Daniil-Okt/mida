@@ -248,14 +248,13 @@ html {
     font-size: rem(16);
     border-bottom: 1px solid #c2c2c2;
     width: 100%;
-    
+
     &::placeholder {
-      color: #acafb5;
-  
+        color: #acafb5;
     }
 
     &._error {
-        border-color: red;
+        border-color: #e14453;;
     }
 }
 
